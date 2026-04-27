@@ -21,4 +21,8 @@ public:
         return 4 * sisi;
     }
 
-    
+    void tampilkan() {
+        cout << "===== Belah Ketupat =====" << endl;
+        cout << "Luas     : " << hitungLuas() << endl;
+        cout << "Keliling : " << hitungKeliling() << endl << endl;
+    }
