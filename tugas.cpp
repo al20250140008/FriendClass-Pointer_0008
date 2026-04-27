@@ -61,4 +61,9 @@ int main() {
     bk.setData(10, 12, 7); // d1, d2, sisi
     bk.tampilkan();
 
-   
+    // Menggunakan Object LayangLayang
+    LayangLayang ll;
+    ll.setData(15, 20, 10, 13); // d1, d2, s1, s2
+    ll.tampilkan();
+
+    
