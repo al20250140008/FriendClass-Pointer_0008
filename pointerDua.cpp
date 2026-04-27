@@ -11,3 +11,9 @@ public:
     }
 };
 
+int main()
+{
+    mahasiswa *mhs = new mahasiswa; 
+    mhs->nim = 2;
+    mhs->showNim();
+   
