@@ -13,4 +13,8 @@ public:
         sisi = pSisi;
     }
 
+    double hitungLuas() {
+        return 0.5 * d1 * d2;
+    }
+
     
