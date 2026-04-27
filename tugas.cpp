@@ -66,4 +66,5 @@ int main() {
     ll.setData(15, 20, 10, 13); // d1, d2, s1, s2
     ll.tampilkan();
 
-    
+    return 0;
+}
