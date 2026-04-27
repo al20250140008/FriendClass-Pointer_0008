@@ -1,24 +1,51 @@
 #include <iostream>
+#include <string>
 using namespace std;
-class mahasiswa {
+
+class siswa; 
+class orang
+{
+private:
+    string nama;
+
 public:
-    int nim;
-    void showNim() {
-        cout << "No Induk = " << nim << endl;
-    }
+    void setNama(string pNama);
+    friend class siswa; // Memberikan akses ke class siswa
 };
 
-int main() {
-    mahasiswa mhs{1}; // Object mhs
-    mhs.showNim(); // Member Access Operator
+class siswa
+{
+private:
+    int id;
 
-    mahasiswa &refMhs = mhs; // Pointer Reference refMhs
-    refMhs.nim = 2; // Member Access Operator
-    refMhs.showNim();
+public:
+    void setId(int pId);
+    void displayAll(orang &a);
+};
 
-    mahasiswa *pMhs = &mhs; // Pointer Dereference pMhs
-    pMhs->nim = 3; // Arrow Operator
-    pMhs->showNim();
+void siswa::displayAll(orang &a)
+{
+    cout << id << endl << a.nama;
+}
+
+void orang::setNama(string pNama)
+{
+    nama = pNama;
+}
+
+void siswa::setId(int pId)
+{
+    id = pId;
+}
+
+int main()
+{
+    orang joko;
+    joko.setNama("Joko Susilo");
+
+    siswa joko_siswa;
+    joko_siswa.setId(1);
+    joko_siswa.displayAll(joko);
 
     return 0;
 }
