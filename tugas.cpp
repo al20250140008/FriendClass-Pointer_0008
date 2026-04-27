@@ -56,4 +56,9 @@ public:
 };
 
 int main() {
+    // Menggunakan Object BelahKetupat
+    BelahKetupat bk;
+    bk.setData(10, 12, 7); // d1, d2, sisi
+    bk.tampilkan();
+
    
