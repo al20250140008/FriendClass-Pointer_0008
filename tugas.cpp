@@ -17,4 +17,8 @@ public:
         return 0.5 * d1 * d2;
     }
 
+    double hitungKeliling() {
+        return 4 * sisi;
+    }
+
     
